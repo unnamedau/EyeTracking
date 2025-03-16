@@ -35,6 +35,8 @@ Discord Server: https://discord.gg/QTyU4eNKrv
 
 - Windows 10 or 11.
 
+- ETVR firmware newer than March 2024.
+
 # To Run
 
 - Download and run the release .exe to install the eye-tracking client.
