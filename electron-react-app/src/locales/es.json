@@ -1,0 +1,209 @@
+{
+    "SettingsDialogWithContent": {
+      "settings": "Configuración",
+      "configureSettings": "Configure sus ajustes aquí.",
+      "languageLabel": "Idioma:",
+      "optionEnglish": "Inglés",
+      "optionJapanese": "Japonés",
+      "optionGerman": "Alemán",
+      "optionFrench": "Francés",
+      "optionSpanish": "Español",
+      "themeLabel": "Tema",
+      "optionDark": "Oscuro",
+      "optionNinaboo": "Ninaboo"
+    },
+    "CameraStream": {
+      "alt": "Flujo de cámara",
+      "offlinePlaceholder": "El flujo está fuera de línea"
+    },
+    "CompositeInput": {
+      "leftPlaceholder": "Ingrese el valor izquierdo",
+      "rightPlaceholder": "Ingrese el valor derecho"
+    },
+    "ConfigurationSection": {
+      "heading": "Configuración",
+      "headsetTrackingLabel": "Seguimiento del headset",
+      "leftEyeLabel": "Datos de imagen del ojo izquierdo",
+      "rightEyeLabel": "Datos de imagen del ojo derecho",
+      "headsetPortLeftPlaceholder": "Ingrese el puerto",
+      "headsetPortRightPlaceholder": "ej: 6080",
+      "ipPortLeftPlaceholder": "Ingrese IP:Puerto",
+      "leftEyeExample": "ej: 192.168.1.100:6080",
+      "rightEyeExample": "ej: 192.168.1.101:6080",
+      "errorInvalidPort": "Número de puerto inválido. Debe estar entre 1 y 65535.",
+      "errorInvalidFormat": "Formato inválido. Use IP:Puerto (p.ej., 192.168.1.100:6080).",
+      "errorInvalidIP": "Dirección IP inválida.",
+      "errorPortRange": "El puerto debe estar entre 1 y 65535.",
+      "backgroundImageUrlLabel": "URL de la imagen de fondo",
+      "backgroundImageUrlPlaceholder": "URL"
+    },
+    "CustomDialog": {
+      "cancel": "Cancelar",
+      "ok": "OK"
+    },
+    "DatabasePage": {
+      "databaseSelectionTitle": "Selección de base de datos",
+      "selectedDatabaseLabel": "Base de datos seleccionada:",
+      "none": "Ninguna",
+      "createNewDatabase": "Crear nueva base de datos",
+      "selectDatabase": "Seleccionar base de datos",
+      "deleteDatabase": "Eliminar base de datos",
+      "invalidDatabaseNameAlert": "Nombre de base de datos inválido. Por favor, ingrese un nombre válido sin separadores de ruta.",
+      "noFolderSelectedAlert": "No se ha seleccionado ninguna carpeta.",
+      "errorCreatingDatabaseAlert": "Error al crear la base de datos. Consulte la consola para más detalles.",
+      "confirmDeleteDatabase": "¿Está seguro de que desea eliminar la base de datos seleccionada? Esta acción no se puede deshacer.",
+      "trainingDataRecordingTitle": "Registro de datos de entrenamiento",
+      "recordTrainingData": "Registrar datos de entrenamiento",
+      "recordingRateTitle": "Velocidad de grabación",
+      "recordingRateTooltip": "Registra un frame de datos de entrenamiento cada X ms",
+      "recordingRateSubtitle": "(Intervalo entre frames en ms)",
+      "databaseEntryCountTitle": "Cantidad de entradas en la base de datos",
+      "numberOfEntriesLabel": "Número de entradas:",
+      "newDatabaseDialogMessage": "Ingrese el nombre de la nueva base de datos:",
+      "newDatabaseDialogPlaceholder": "Nombre de la nueva base de datos"
+    },
+    "EyeTrackingStatusCard": {
+      "label": "Seguimiento ocular",
+      "stateLabels": {
+        "good": "Listo",
+        "bad": "Fuera de línea",
+        "forced": "Forzado fuera de línea"
+      }
+    },
+    "HeadsetTrackingCard": {
+      "heading": "Seguimiento del headset",
+      "title": "El pitch y el yaw son relativos al objetivo de la mirada",
+      "noData": "Sin datos",
+      "pitchLabel": "Pitch:",
+      "yawLabel": "Yaw:"
+    },
+    "KalmanFilterConfigCard": {
+      "header": "Configuración adaptativa del filtro de Kalman",
+      "smoothEyesLabel": "Ojos suaves:",
+      "smoothEyesTooltip": "Alterna Ojos suaves: Cuando está activado, el filtro de Kalman suaviza el ruido de pequeños movimientos oculares.",
+      "smoothOpennessLabel": "Apertura suave:",
+      "smoothOpennessTooltip": "Alterna Apertura suave: Cuando está activado, el filtro de Kalman suaviza el ruido pequeño en los datos de apertura ocular.",
+      "opennessBasedTrustLabel": "Confianza basada en apertura:",
+      "opennessBasedTrustTooltip": "Ajusta la confianza en las mediciones de la mirada basada en la apertura de los ojos. Una apertura menor reduce la confianza, ayudando a minimizar el tracking errático cuando los ojos están parcialmente cerrados.",
+      "measurementNoiseLabel": "Ruido de medición (R):",
+      "measurementNoiseTooltip": "Varianza esperada en las mediciones. Valores mayores reducen la confianza en cada medición. (Rango: 2-8, por defecto: 4)",
+      "qLowLabel": "Q_low:",
+      "qLowTooltip": "Ruido del proceso para movimientos pequeños. Valores menores dan un resultado más suave pero pueden disminuir la respuesta. (Rango: 0.001-0.1, por defecto: 0.01)",
+      "qHighLabel": "Q_high:",
+      "qHighTooltip": "Ruido del proceso para movimientos grandes. Valores mayores permiten que el filtro se adapte más rápidamente a los cambios. (Rango: 1-100, por defecto: 10)",
+      "thresholdGazeLabel": "Umbral de mirada:",
+      "thresholdGazeTooltip": "El límite para distinguir entre pequeños ruidos y movimientos oculares significativos. (Rango: 1-4, por defecto: 2)",
+      "thresholdOpennessLabel": "Umbral de apertura:",
+      "thresholdOpennessTooltip": "El límite para distinguir entre pequeños ruidos y cambios significativos en la apertura. (Rango: 0.01-0.1)",
+      "blinkReleaseDelayLabel": "Retraso en la liberación del parpadeo:",
+      "blinkReleaseDelayTooltip": "Después de detectar un ojo cerrado, mantenga el estado cerrado durante el número especificado de milisegundos para compensar el retraso en el tracking antes de reabrir."
+    },
+    "LeftEyeStatusCard": {
+      "label": "Datos de imagen - ojo izquierdo",
+      "stateLabels": {
+        "good": "En línea",
+        "bad": "Fuera de línea",
+        "forced": "Forzado fuera de línea"
+      }
+    },
+    "ModelSelectionCard": {
+      "header": "Selección de modelo",
+      "selectButton": "Seleccionar carpeta del modelo",
+      "errorSelectingModel": "Error al seleccionar la carpeta del modelo:"
+    },
+    "OpennessConfigurationCard": {
+      "header": "Configuración de apertura",
+      "fullyClosedLabel": "Completamente cerrado (0.00 - {{max}})",
+      "neutralLabel": "Neutral ({{min}} - {{max}})",
+      "wideLabel": "Amplio ({{min}} - 1.00)"
+    },
+    "RightEyeStatusCard": {
+      "label": "Datos de imagen - ojo derecho",
+      "stateLabels": {
+        "good": "En línea",
+        "bad": "Fuera de línea",
+        "forced": "Forzado fuera de línea"
+      }
+    },
+    "SettingsDialog": {
+      "settings": "Configuración"
+    },
+    "StartTrackingCard": {
+      "header": "Iniciar tracking",
+      "oscLabel": "OSC IP : Puerto",
+      "oscLeftPlaceholder": "Ingrese IP:",
+      "oscRightPlaceholder": "Puerto",
+      "trackingRateLabel": "Velocidad de tracking: {{rate}} ms",
+      "trackingRateInfo": "(Intervalo mínimo entre frames en ms)",
+      "vrcNative": "VRC Native",
+      "vrcftV1": "VRCFT (v1)",
+      "vrcftV2": "VRCFT (v2)",
+      "splitYOut": "Salida Y dividida",
+      "splitYOutTooltip": "Si se activa, la salida del eje Y se enviará por separado a /v2/EyeLeftY y /v2/EyeRightY. Si está desactivado, se enviará a /v2/EyeY.",
+      "syncUpdate": "Actualización sincronizada",
+      "syncUpdateTooltip": "Actualiza el tracking solo cuando ambos ojos han refrescado sus frames desde la última actualización.",
+      "indEyes": "Ojos individuales",
+      "indEyesTooltip": "Si está activado, el modelo calcula la dirección de la mirada para cada ojo por separado. Si está desactivado, ambos ojos se combinan en una sola dirección de mirada.",
+      "indEyelids": "Párpados individuales",
+      "indEyelidsTooltip": "Si está activado, el modelo calcula la apertura de los párpados para cada ojo por separado. Si está desactivado, se combinan los valores de ambos ojos.",
+      "eyeTracking": "Tracking ocular",
+      "eyeTrackingTooltip": "Si está activado, los datos de tracking ocular se enviarán vía OSC; si está desactivado, no se enviarán.",
+      "eyelidTracking": "Tracking de párpados",
+      "eyelidTrackingTooltip": "Si está activado, los datos de tracking de párpados se enviarán vía OSC; si está desactivado, no se enviarán.",
+      "vrcftPrefix": "Prefijo VRCFT",
+      "vrcftPrefixPlaceholder": "Ingrese el prefijo VRCFT"
+    },
+    "StatusCard": {
+      "clickToRemoveForcedOffline": "Haga clic para eliminar el estado de desconexión forzada",
+      "clickToForceOffline": "Haga clic para forzar la desconexión"
+    },
+    "StatusPage": {
+      "leftEyeCamera": "Cámara del ojo izquierdo",
+      "rightEyeCamera": "Cámara del ojo derecho"
+    },
+    "Tabs": {
+      "settings": "⚙"
+    },
+    "ThetaFlagsCard": {
+      "header": "Flags de Theta",
+      "recordLabel": "Registrar:",
+      "deleteRecentLabel": "Eliminar reciente:",
+      "opennessLabel": "Apertura:",
+      "modeLabel": "Modo:"
+    },
+    "common": {
+      "true": "TRUE",
+      "false": "FALSE"
+    },
+    "ThetaStatusCard": {
+      "label": "Tracking del headset VR",
+      "stateLabels": {
+        "good": "En línea",
+        "bad": "Fuera de línea",
+        "forced": "Forzado fuera de línea"
+      }
+    },
+    "TrackingConfigurationCard": {
+      "header": "Configuración de mirada",
+      "verticalExaggerationLabel": "Exageración vertical: {{value}}",
+      "verticalExaggerationDescription": "(Escala el movimiento vertical)",
+      "horizontalExaggerationLabel": "Exageración horizontal: {{value}}",
+      "horizontalExaggerationDescription": "(Escala el movimiento horizontal)",
+      "pitchOffsetLabel": "Offset de pitch (grados): {{value}}°",
+      "pitchOffsetDescription": "(Ajuste el offset de pitch)"
+    },
+    "TrackingDataCard": {
+      "header": "Datos de mirada",
+      "gaugeLabel": "{{yaw}}°x / {{pitch}}°y"
+    },
+    "TrackingPage": {
+      "header": "Dashboard de tracking"
+    },
+    "App": {
+      "tabDocumentation": "Documentación",
+      "tabStatus": "Estado",
+      "tabDatabase": "Base de datos",
+      "tabTracking": "Tracking"
+    }
+}
+  

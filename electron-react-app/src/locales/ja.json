@@ -1,0 +1,208 @@
+{
+  "SettingsDialogWithContent": {
+    "settings": "設定",
+    "configureSettings": "ここで設定を構成してください。",
+    "languageLabel": "言語:",
+    "optionEnglish": "英語",
+    "optionJapanese": "日本語",
+    "optionGerman": "ドイツ語",
+    "optionFrench": "フランス語",
+    "optionSpanish": "スペイン語",
+    "themeLabel": "テーマ",
+    "optionDark": "ダーク",
+    "optionNinaboo": "Ninaboo"
+  },
+  "CameraStream": {
+    "alt": "カメラストリーム",
+    "offlinePlaceholder": "ストリームがオフラインです"
+  },
+  "CompositeInput": {
+    "leftPlaceholder": "左の値を入力してください",
+    "rightPlaceholder": "右の値を入力してください"
+  },
+  "ConfigurationSection": {
+    "heading": "設定",
+    "headsetTrackingLabel": "ヘッドセットトラッキング",
+    "leftEyeLabel": "左目画像データ",
+    "rightEyeLabel": "右目画像データ",
+    "headsetPortLeftPlaceholder": "ポート番号を入力してください",
+    "headsetPortRightPlaceholder": "例: 6080",
+    "ipPortLeftPlaceholder": "IP:ポートを入力してください",
+    "leftEyeExample": "例: 192.168.1.100:6080",
+    "rightEyeExample": "例: 192.168.1.101:6080",
+    "errorInvalidPort": "無効なポート番号です。1から65535の間でなければなりません。",
+    "errorInvalidFormat": "無効な形式です。IP:ポート形式で入力してください（例：192.168.1.100:6080）。",
+    "errorInvalidIP": "無効なIPアドレスです。",
+    "errorPortRange": "ポート番号は1から65535の間でなければなりません。",
+    "backgroundImageUrlLabel": "背景画像のURL",
+    "backgroundImageUrlPlaceholder": "URL"
+  },
+  "CustomDialog": {
+    "cancel": "キャンセル",
+    "ok": "OK"
+  },
+  "DatabasePage": {
+    "databaseSelectionTitle": "データベース選択",
+    "selectedDatabaseLabel": "選択されたデータベース:",
+    "none": "なし",
+    "createNewDatabase": "新規データベース作成",
+    "selectDatabase": "データベース選択",
+    "deleteDatabase": "データベース削除",
+    "invalidDatabaseNameAlert": "無効なデータベース名です。パス区切り文字を含まない有効な名前を入力してください。",
+    "noFolderSelectedAlert": "フォルダーが選択されていません。",
+    "errorCreatingDatabaseAlert": "データベース作成中にエラーが発生しました。詳細はコンソールを確認してください。",
+    "confirmDeleteDatabase": "選択されたデータベースを削除してもよろしいですか？この操作は元に戻せません。",
+    "trainingDataRecordingTitle": "トレーニングデータ記録",
+    "recordTrainingData": "トレーニングデータを記録する",
+    "recordingRateTitle": "記録速度",
+    "recordingRateTooltip": "Xミリ秒ごとにトレーニングデータのフレームを記録します",
+    "recordingRateSubtitle": "（フレーム間隔：ミリ秒）",
+    "databaseEntryCountTitle": "データベースエントリ数",
+    "numberOfEntriesLabel": "エントリ数:",
+    "newDatabaseDialogMessage": "新しいデータベース名を入力してください：",
+    "newDatabaseDialogPlaceholder": "新しいデータベース名"
+  },
+  "EyeTrackingStatusCard": {
+    "label": "目のトラッキング",
+    "stateLabels": {
+      "good": "準備完了",
+      "bad": "オフライン",
+      "forced": "強制オフライン"
+    }
+  },
+  "HeadsetTrackingCard": {
+    "heading": "ヘッドセットトラッキング",
+    "title": "ピッチとヨーは視線ターゲットに対する相対値です",
+    "noData": "データなし",
+    "pitchLabel": "ピッチ:",
+    "yawLabel": "ヨー:"
+  },
+  "KalmanFilterConfigCard": {
+    "header": "適応型カルマンフィルター設定",
+    "smoothEyesLabel": "スムーズアイ:",
+    "smoothEyesTooltip": "スムーズアイを切り替え: 有効にすると、カルマンフィルターが微小な目の動きのノイズを平滑化します。",
+    "smoothOpennessLabel": "スムーズオープンネス:",
+    "smoothOpennessTooltip": "スムーズオープンネスを切り替え: 有効にすると、カルマンフィルターが目の開閉データの微小なノイズを平滑化します。",
+    "opennessBasedTrustLabel": "オープンネスに基づく信頼度:",
+    "opennessBasedTrustTooltip": "目の開閉に基づいて視線測定の信頼度を調整します。開閉が低い場合、信頼度が下がり、目が部分的に閉じているときの不規則なトラッキングを最小限に抑えます。",
+    "measurementNoiseLabel": "測定ノイズ (R):",
+    "measurementNoiseTooltip": "測定値の分散の予測値。値が高いほど各測定値の信頼度が下がります。（範囲：2-8、デフォルト：4）",
+    "qLowLabel": "Q_low:",
+    "qLowTooltip": "微小な動きに対するプロセスノイズ。値が低いほど出力は平滑になりますが、反応が遅くなる可能性があります。（範囲：0.001-0.1、デフォルト：0.01）",
+    "qHighLabel": "Q_high:",
+    "qHighTooltip": "大きな動きに対するプロセスノイズ。値が高いほどフィルターが変化に迅速に適応できます。（範囲：1-100、デフォルト：10）",
+    "thresholdGazeLabel": "閾値（視線）:",
+    "thresholdGazeTooltip": "小さなノイズと重要な目の動きを区別するためのカットオフ値。（範囲：1-4、デフォルト：2）",
+    "thresholdOpennessLabel": "閾値（オープンネス）:",
+    "thresholdOpennessTooltip": "小さなノイズと顕著な開閉の変化を区別するためのカットオフ値。（範囲：0.01-0.1）",
+    "blinkReleaseDelayLabel": "ブリンクリリース遅延:",
+    "blinkReleaseDelayTooltip": "目が閉じた後、再び開く前に追跡遅延を考慮して指定されたミリ秒間、閉じた状態を維持します。"
+  },
+  "LeftEyeStatusCard": {
+    "label": "画像データ - 左目",
+    "stateLabels": {
+      "good": "オンライン",
+      "bad": "オフライン",
+      "forced": "強制オフライン"
+    }
+  },
+  "ModelSelectionCard": {
+    "header": "モデル選択",
+    "selectButton": "モデルフォルダを選択",
+    "errorSelectingModel": "モデルフォルダの選択エラー:"
+  },
+  "OpennessConfigurationCard": {
+    "header": "オープンネス設定",
+    "fullyClosedLabel": "完全に閉じる (0.00 - {{max}})",
+    "neutralLabel": "中立 ({{min}} - {{max}})",
+    "wideLabel": "広い ({{min}} - 1.00)"
+  },
+  "RightEyeStatusCard": {
+    "label": "画像データ - 右目",
+    "stateLabels": {
+      "good": "オンライン",
+      "bad": "オフライン",
+      "forced": "強制オフライン"
+    }
+  },
+  "SettingsDialog": {
+    "settings": "設定"
+  },
+  "StartTrackingCard": {
+    "header": "トラッキング開始",
+    "oscLabel": "OSC IP : ポート",
+    "oscLeftPlaceholder": "IPを入力:",
+    "oscRightPlaceholder": "ポート",
+    "trackingRateLabel": "トラッキング速度: {{rate}} ms",
+    "trackingRateInfo": "（最小フレーム間隔：ms）",
+    "vrcNative": "VRCネイティブ",
+    "vrcftV1": "VRCFT (v1)",
+    "vrcftV2": "VRCFT (v2)",
+    "splitYOut": "Y軸分割出力",
+    "splitYOutTooltip": "このオプションを有効にすると、Y軸の出力が /v2/EyeLeftY と /v2/EyeRightY に個別に送信され、無効の場合は /v2/EyeY に送信されます。",
+    "syncUpdate": "同期更新",
+    "syncUpdateTooltip": "前回の更新以降、左目と右目のフレームが両方とも更新された場合にのみトラッキングを更新します。",
+    "indEyes": "個別目",
+    "indEyesTooltip": "有効の場合、モデルは各目の視線を個別に計算し、無効の場合は両目を組み合わせた視線方向を算出します。",
+    "indEyelids": "個別まぶた",
+    "indEyelidsTooltip": "有効の場合、各目のまぶたの開閉度を個別に計算し、無効の場合は両目の値を合算します。",
+    "eyeTracking": "目のトラッキング",
+    "eyeTrackingTooltip": "有効の場合、目のトラッキングデータがOSC経由で送信され、無効の場合は送信されません。",
+    "eyelidTracking": "まぶたトラッキング",
+    "eyelidTrackingTooltip": "有効の場合、まぶたのトラッキングデータがOSC経由で送信され、無効の場合は送信されません。",
+    "vrcftPrefix": "VRCFTプレフィックス",
+    "vrcftPrefixPlaceholder": "VRCFTプレフィックスを入力してください"
+  },
+  "StatusCard": {
+    "clickToRemoveForcedOffline": "強制オフライン状態を解除するにはクリックしてください",
+    "clickToForceOffline": "接続を強制的にオフラインにするにはクリックしてください"
+  },
+  "StatusPage": {
+    "leftEyeCamera": "左目カメラ",
+    "rightEyeCamera": "右目カメラ"
+  },
+  "Tabs": {
+    "settings": "⚙"
+  },
+  "ThetaFlagsCard": {
+    "header": "シータフラグ",
+    "recordLabel": "記録:",
+    "deleteRecentLabel": "直近削除:",
+    "opennessLabel": "開閉:",
+    "modeLabel": "モード:"
+  },
+  "common": {
+    "true": "TRUE",
+    "false": "FALSE"
+  },
+  "ThetaStatusCard": {
+    "label": "VRヘッドセットトラッキング",
+    "stateLabels": {
+      "good": "オンライン",
+      "bad": "オフライン",
+      "forced": "強制オフライン"
+    }
+  },
+  "TrackingConfigurationCard": {
+    "header": "視線設定",
+    "verticalExaggerationLabel": "垂直拡大率: {{value}}",
+    "verticalExaggerationDescription": "(垂直移動の拡大率)",
+    "horizontalExaggerationLabel": "水平拡大率: {{value}}",
+    "horizontalExaggerationDescription": "(水平移動の拡大率)",
+    "pitchOffsetLabel": "ピッチオフセット: {{value}}°",
+    "pitchOffsetDescription": "(ピッチオフセットの調整)"
+  },
+  "TrackingDataCard": {
+    "header": "視線データ",
+    "gaugeLabel": "{{yaw}}°x / {{pitch}}°y"
+  },
+  "TrackingPage": {
+    "header": "トラッキングダッシュボード"
+  },
+  "App": {
+    "tabDocumentation": "ドキュメンテーション",
+    "tabStatus": "ステータス",
+    "tabDatabase": "データベース",
+    "tabTracking": "トラッキング"
+  }
+}

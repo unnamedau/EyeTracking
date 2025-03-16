@@ -1,0 +1,209 @@
+{
+    "SettingsDialogWithContent": {
+      "settings": "Einstellungen",
+      "configureSettings": "Konfigurieren Sie hier Ihre Einstellungen.",
+      "languageLabel": "Sprache:",
+      "optionEnglish": "Englisch",
+      "optionJapanese": "Japanisch",
+      "optionGerman": "Deutsch",
+      "optionFrench": "Französisch",
+      "optionSpanish": "Spanisch",
+      "themeLabel": "Thema",
+      "optionDark": "Dunkel",
+      "optionNinaboo": "Ninaboo"
+    },
+    "CameraStream": {
+      "alt": "Kamera-Stream",
+      "offlinePlaceholder": "Stream ist offline"
+    },
+    "CompositeInput": {
+      "leftPlaceholder": "Geben Sie den linken Wert ein",
+      "rightPlaceholder": "Geben Sie den rechten Wert ein"
+    },
+    "ConfigurationSection": {
+      "heading": "Konfiguration",
+      "headsetTrackingLabel": "Headset-Tracking",
+      "leftEyeLabel": "Linke Augendaten",
+      "rightEyeLabel": "Rechte Augendaten",
+      "headsetPortLeftPlaceholder": "Port eingeben",
+      "headsetPortRightPlaceholder": "z.B.: 6080",
+      "ipPortLeftPlaceholder": "IP:Port eingeben",
+      "leftEyeExample": "z.B.: 192.168.1.100:6080",
+      "rightEyeExample": "z.B.: 192.168.1.101:6080",
+      "errorInvalidPort": "Ungültige Portnummer. Muss zwischen 1 und 65535 liegen.",
+      "errorInvalidFormat": "Ungültiges Format. Verwenden Sie IP:Port (z.B. 192.168.1.100:6080)",
+      "errorInvalidIP": "Ungültige IP-Adresse.",
+      "errorPortRange": "Port muss zwischen 1 und 65535 liegen.",
+      "backgroundImageUrlLabel": "URL des Hintergrundbildes",
+      "backgroundImageUrlPlaceholder": "URL"
+    },
+    "CustomDialog": {
+      "cancel": "Abbrechen",
+      "ok": "OK"
+    },
+    "DatabasePage": {
+      "databaseSelectionTitle": "Datenbankauswahl",
+      "selectedDatabaseLabel": "Ausgewählte Datenbank:",
+      "none": "Keine",
+      "createNewDatabase": "Neue Datenbank erstellen",
+      "selectDatabase": "Datenbank auswählen",
+      "deleteDatabase": "Datenbank löschen",
+      "invalidDatabaseNameAlert": "Ungültiger Datenbankname. Bitte geben Sie einen gültigen Namen ohne Pfadtrennzeichen ein.",
+      "noFolderSelectedAlert": "Kein Ordner ausgewählt.",
+      "errorCreatingDatabaseAlert": "Fehler beim Erstellen der Datenbank. Details siehe Konsole.",
+      "confirmDeleteDatabase": "Sind Sie sicher, dass Sie die ausgewählte Datenbank löschen möchten? Diese Aktion kann nicht rückgängig gemacht werden.",
+      "trainingDataRecordingTitle": "Aufzeichnung von Trainingsdaten",
+      "recordTrainingData": "Trainingsdaten aufzeichnen",
+      "recordingRateTitle": "Aufzeichnungsgeschwindigkeit",
+      "recordingRateTooltip": "Zeichnet alle X ms einen Frame der Trainingsdaten auf",
+      "recordingRateSubtitle": "(Frame-Intervall in ms)",
+      "databaseEntryCountTitle": "Anzahl der Datenbankeinträge",
+      "numberOfEntriesLabel": "Anzahl der Einträge:",
+      "newDatabaseDialogMessage": "Neuen Datenbanknamen eingeben:",
+      "newDatabaseDialogPlaceholder": "Neuer Datenbankname"
+    },
+    "EyeTrackingStatusCard": {
+      "label": "Augen-Tracking",
+      "stateLabels": {
+        "good": "Bereit",
+        "bad": "Offline",
+        "forced": "Erzwungen offline"
+      }
+    },
+    "HeadsetTrackingCard": {
+      "heading": "Headset-Tracking",
+      "title": "Pitch und Yaw sind relativ zum Blickziel",
+      "noData": "Keine Daten",
+      "pitchLabel": "Pitch:",
+      "yawLabel": "Yaw:"
+    },
+    "KalmanFilterConfigCard": {
+      "header": "Adaptive Kalman-Filter-Konfiguration",
+      "smoothEyesLabel": "Sanfte Augen:",
+      "smoothEyesTooltip": "Schalten Sie sanfte Augen ein: Bei Aktivierung glättet der Kalman-Filter kleine Bewegungsstörungen der Augen.",
+      "smoothOpennessLabel": "Sanfte Offenheit:",
+      "smoothOpennessTooltip": "Schalten Sie sanfte Offenheit ein: Bei Aktivierung glättet der Kalman-Filter kleine Störungen in den Offenheitsdaten der Augen.",
+      "opennessBasedTrustLabel": "Vertrauen basierend auf Offenheit:",
+      "opennessBasedTrustTooltip": "Passt das Vertrauen in die Blickmessungen basierend auf der Augenoffenheit an. Eine geringere Offenheit verringert das Vertrauen, um unregelmäßiges Tracking bei teilweise geschlossenen Augen zu minimieren.",
+      "measurementNoiseLabel": "Messrauschen (R):",
+      "measurementNoiseTooltip": "Erwartete Varianz der Messungen. Höhere Werte verringern das Vertrauen in jede Messung. (Bereich: 2-8, Standard: 4)",
+      "qLowLabel": "Q_low:",
+      "qLowTooltip": "Prozessrauschen für kleine Bewegungen. Niedrigere Werte führen zu glatteren Ergebnissen, können aber die Reaktionsgeschwindigkeit verringern. (Bereich: 0.001-0.1, Standard: 0.01)",
+      "qHighLabel": "Q_high:",
+      "qHighTooltip": "Prozessrauschen für große Bewegungen. Höhere Werte ermöglichen eine schnellere Anpassung des Filters. (Bereich: 1-100, Standard: 10)",
+      "thresholdGazeLabel": "Blickschwelle:",
+      "thresholdGazeTooltip": "Der Grenzwert zur Unterscheidung zwischen kleinen Störungen und signifikanten Augenbewegungen. (Bereich: 1-4, Standard: 2)",
+      "thresholdOpennessLabel": "Offenheitsschwelle:",
+      "thresholdOpennessTooltip": "Der Grenzwert zur Unterscheidung zwischen kleinen Störungen und signifikanten Veränderungen in der Offenheit. (Bereich: 0.01-0.1)",
+      "blinkReleaseDelayLabel": "Blink-Freigabeverzögerung:",
+      "blinkReleaseDelayTooltip": "Nach Erkennung eines geschlossenen Auges wird der Zustand für die angegebene Anzahl Millisekunden beibehalten, um Verzögerungen im Tracking auszugleichen, bevor die Augen wieder geöffnet werden."
+    },
+    "LeftEyeStatusCard": {
+      "label": "Bilddaten - linkes Auge",
+      "stateLabels": {
+        "good": "Online",
+        "bad": "Offline",
+        "forced": "Erzwungen offline"
+      }
+    },
+    "ModelSelectionCard": {
+      "header": "Modellauswahl",
+      "selectButton": "Modellordner auswählen",
+      "errorSelectingModel": "Fehler bei der Auswahl des Modellordners:"
+    },
+    "OpennessConfigurationCard": {
+      "header": "Offenheitskonfiguration",
+      "fullyClosedLabel": "Vollständig geschlossen (0.00 - {{max}})",
+      "neutralLabel": "Neutral ({{min}} - {{max}})",
+      "wideLabel": "Weit ({{min}} - 1.00)"
+    },
+    "RightEyeStatusCard": {
+      "label": "Bilddaten - rechtes Auge",
+      "stateLabels": {
+        "good": "Online",
+        "bad": "Offline",
+        "forced": "Erzwungen offline"
+      }
+    },
+    "SettingsDialog": {
+      "settings": "Einstellungen"
+    },
+    "StartTrackingCard": {
+      "header": "Tracking starten",
+      "oscLabel": "OSC IP : Port",
+      "oscLeftPlaceholder": "IP eingeben:",
+      "oscRightPlaceholder": "Port",
+      "trackingRateLabel": "Tracking-Geschwindigkeit: {{rate}} ms",
+      "trackingRateInfo": "(Minimales Frame-Intervall in ms)",
+      "vrcNative": "VRC Native",
+      "vrcftV1": "VRCFT (v1)",
+      "vrcftV2": "VRCFT (v2)",
+      "splitYOut": "Y-Achse getrennt ausgeben",
+      "splitYOutTooltip": "Aktiviert diese Option, wird die Y-Achsen-Ausgabe separat an /v2/EyeLeftY und /v2/EyeRightY gesendet. Deaktiviert wird die Ausgabe an /v2/EyeY gesendet.",
+      "syncUpdate": "Synchrones Update",
+      "syncUpdateTooltip": "Aktualisiert das Tracking nur, wenn beide Augen seit der letzten Aktualisierung neue Frames geliefert haben.",
+      "indEyes": "Einzelne Augen",
+      "indEyesTooltip": "Wenn aktiviert, berechnet das Modell den Blick für jedes Auge separat. Andernfalls werden beide Augen zu einer Blickrichtung kombiniert.",
+      "indEyelids": "Einzelne Augenlider",
+      "indEyelidsTooltip": "Wenn aktiviert, berechnet das Modell die Offenheit der Augenlider für jedes Auge separat. Andernfalls werden beide Werte zusammengefasst.",
+      "eyeTracking": "Augen-Tracking",
+      "eyeTrackingTooltip": "Wenn aktiviert, werden die Augen-Tracking-Daten über OSC gesendet; andernfalls nicht.",
+      "eyelidTracking": "Augenlider-Tracking",
+      "eyelidTrackingTooltip": "Wenn aktiviert, werden die Augenlider-Tracking-Daten über OSC gesendet; andernfalls nicht.",
+      "vrcftPrefix": "VRCFT-Präfix",
+      "vrcftPrefixPlaceholder": "Geben Sie das VRCFT-Präfix ein"
+    },
+    "StatusCard": {
+      "clickToRemoveForcedOffline": "Klicken Sie, um den erzwungenen Offline-Zustand zu entfernen",
+      "clickToForceOffline": "Klicken Sie, um die Verbindung erzwungen offline zu schalten"
+    },
+    "StatusPage": {
+      "leftEyeCamera": "Linke Augenkamera",
+      "rightEyeCamera": "Rechte Augenkamera"
+    },
+    "Tabs": {
+      "settings": "⚙"
+    },
+    "ThetaFlagsCard": {
+      "header": "Theta-Flags",
+      "recordLabel": "Aufzeichnen:",
+      "deleteRecentLabel": "Zuletzt löschen:",
+      "opennessLabel": "Offenheit:",
+      "modeLabel": "Modus:"
+    },
+    "common": {
+      "true": "TRUE",
+      "false": "FALSE"
+    },
+    "ThetaStatusCard": {
+      "label": "VR-Headset-Tracking",
+      "stateLabels": {
+        "good": "Online",
+        "bad": "Offline",
+        "forced": "Erzwungen offline"
+      }
+    },
+    "TrackingConfigurationCard": {
+      "header": "Blickkonfiguration",
+      "verticalExaggerationLabel": "Vertikale Übertreibung: {{value}}",
+      "verticalExaggerationDescription": "(Skaliere vertikale Bewegung)",
+      "horizontalExaggerationLabel": "Horizontale Übertreibung: {{value}}",
+      "horizontalExaggerationDescription": "(Skaliere horizontale Bewegung)",
+      "pitchOffsetLabel": "Pitch-Offset (Grad): {{value}}°",
+      "pitchOffsetDescription": "(Pitch-Offset anpassen)"
+    },
+    "TrackingDataCard": {
+      "header": "Blickdaten",
+      "gaugeLabel": "{{yaw}}°x / {{pitch}}°y"
+    },
+    "TrackingPage": {
+      "header": "Tracking-Dashboard"
+    },
+    "App": {
+      "tabDocumentation": "Dokumentation",
+      "tabStatus": "Status",
+      "tabDatabase": "Datenbank",
+      "tabTracking": "Tracking"
+    }
+  }
+  

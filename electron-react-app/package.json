@@ -1,0 +1,77 @@
+{
+  "name": "eye-tracking",
+  "version": "1.0.0",
+  "private": true,
+  "description": "VRC ML Eye Tracking Application",
+  "author": "Ryan",
+  "main": "dist-electron/main.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development vite",
+    "electron": "tsc --project tsconfig.electron.json && electron dist-electron/main.js",
+    "build": "vite build",
+    "build-electron": "tsc --project tsconfig.electron.json && electron-builder",
+    "dev": "cross-env NODE_ENV=development concurrently \"vite\" \"tsc --project tsconfig.electron.json && electron dist-electron/main.js\"",
+    "compile-electron": "tsc --project tsconfig.electron.json",
+    "build-all": "npm run build && npm run compile-electron",
+    "electron:build": "npm run build-all && electron-builder"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.1",
+    "@types/node-osc": "^6.0.3",
+    "@types/rc-slider": "^9.3.0",
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
+    "@vitejs/plugin-react": "^4.3.4",
+    "concurrently": "^9.1.2",
+    "cross-env": "^7.0.3",
+    "electron": "^34.2.0",
+    "electron-builder": "^25.1.8",
+    "eslint": "^9.19.0",
+    "globals": "^15.14.0",
+    "typescript": "~5.7.2",
+    "vite": "^6.1.0"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.5.1",
+    "@tensorflow/tfjs": "^4.22.0",
+    "electron-serve": "^2.1.1",
+    "electron-store": "^10.0.1",
+    "i18next": "^24.2.2",
+    "osc": "^2.4.5",
+    "rc-slider": "^9.7.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-i18next": "^15.4.1",
+    "react-markdown": "^9.0.3",
+    "react-redux": "^9.2.0",
+    "redux-persist": "^6.0.0",
+    "remark-breaks": "^4.0.0",
+    "sqlite3": "^5.1.7"
+  },
+  "build": {
+    "asar": true,
+    "asarUnpack": [
+      "node_modules/electron-serve/**"
+    ],
+    "appId": "com.example.electronreactapp",
+    "files": [
+      "build/**/*",
+      "dist-electron/**/*",
+      "node_modules/**/*",
+      "package.json"
+    ],
+    "directories": {
+      "buildResources": "assets"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "build/icon-512-maskable.png"
+    },
+    "mac": {
+      "target": "dmg"
+    },
+    "linux": {
+      "target": "AppImage"
+    }
+  }
+}

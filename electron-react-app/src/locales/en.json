@@ -1,0 +1,210 @@
+{
+    "SettingsDialogWithContent": {
+      "settings": "Settings",
+      "configureSettings": "Configure your settings here.",
+      "languageLabel": "Language:",
+      "optionEnglish": "English",
+      "optionJapanese": "Japanese",
+      "optionGerman": "German",
+      "optionFrench": "French",
+      "optionSpanish": "Spanish",
+      "themeLabel": "Theme",
+      "optionDark": "Dark",
+      "optionNinaboo": "Ninaboo",
+      "optionTrans": "Trans"
+    },
+    "CameraStream": {
+      "alt": "Camera Stream",
+      "offlinePlaceholder": "Stream is offline"
+    },
+    "CompositeInput": {
+      "leftPlaceholder": "Enter left value",
+      "rightPlaceholder": "Enter right value"
+    },
+    "ConfigurationSection": {
+      "heading": "Configuration",
+      "headsetTrackingLabel": "Headset Tracking",
+      "leftEyeLabel": "Left Eye Image Data",
+      "rightEyeLabel": "Right Eye Image Data",
+      "headsetPortLeftPlaceholder": "Enter Port",
+      "headsetPortRightPlaceholder": "ex: 6080",
+      "ipPortLeftPlaceholder": "Enter IP:Port",
+      "leftEyeExample": "ex: 192.168.1.100:6080",
+      "rightEyeExample": "ex: 192.168.1.101:6080",
+      "errorInvalidPort": "Invalid port number. Must be between 1 and 65535.",
+      "errorInvalidFormat": "Invalid format. Use IP:Port (e.g., 192.168.1.100:6080)",
+      "errorInvalidIP": "Invalid IP address.",
+      "errorPortRange": "Port must be between 1 and 65535.",
+      "backgroundImageUrlLabel": "Background Image URL",
+      "backgroundImageUrlPlaceholder": "URL"
+    },
+    "CustomDialog": {
+      "cancel": "Cancel",
+      "ok": "OK"
+    },
+    "DatabasePage": {
+      "databaseSelectionTitle": "Database Selection",
+      "selectedDatabaseLabel": "Selected Database:",
+      "none": "None",
+      "createNewDatabase": "Create New Database",
+      "selectDatabase": "Select Database",
+      "deleteDatabase": "Delete Database",
+      "invalidDatabaseNameAlert": "Invalid database name. Please enter a valid name without path separators.",
+      "noFolderSelectedAlert": "No folder selected.",
+      "errorCreatingDatabaseAlert": "Error creating database. See console for details.",
+      "confirmDeleteDatabase": "Are you sure you want to delete the selected database? This action cannot be undone.",
+      "trainingDataRecordingTitle": "Training Data Recording",
+      "recordTrainingData": "Record Training Data",
+      "recordingRateTitle": "Recording Rate",
+      "recordingRateTooltip": "Record a frame of training data every X ms",
+      "recordingRateSubtitle": "(Frame interval in ms)",
+      "databaseEntryCountTitle": "Database Entry Count",
+      "numberOfEntriesLabel": "Number of entries:",
+      "newDatabaseDialogMessage": "Enter New Database Name:",
+      "newDatabaseDialogPlaceholder": "New Database Name"
+    },
+    "EyeTrackingStatusCard": {
+        "label": "Eye Tracking",
+        "stateLabels": {
+          "good": "Ready",
+          "bad": "Offline",
+          "forced": "Forced Offline"
+        }
+    },
+    "HeadsetTrackingCard": {
+        "heading": "Headset Tracking",
+        "title": "Pitch and Yaw are relative to the gaze target",
+        "noData": "No data",
+        "pitchLabel": "Pitch:",
+        "yawLabel": "Yaw:"
+    },
+    "KalmanFilterConfigCard": {
+        "header": "Adaptive Kalman Filter Configuration",
+        "smoothEyesLabel": "Smooth Eyes:",
+        "smoothEyesTooltip": "Toggle Smooth Eyes: When enabled, the Kalman filter smooths out small eye movement noise.",
+        "smoothOpennessLabel": "Smooth Openness:",
+        "smoothOpennessTooltip": "Toggle Smooth Openness: When enabled, the Kalman filter smooths out small noise in eye openness data.",
+        "opennessBasedTrustLabel": "Openness Based Trust:",
+        "opennessBasedTrustTooltip": "Adjusts the trust given to gaze measurements based on eye openness. Lower openness reduces the trust, helping to minimize erratic tracking when eyes are partially closed.",
+        "measurementNoiseLabel": "Measurement Noise (R):",
+        "measurementNoiseTooltip": "Expected variance in the measurements. Higher values reduce trust in each measurement. (Range: 2-8, default: 4)",
+        "qLowLabel": "Q_low:",
+        "qLowTooltip": "Process noise for small movements. Lower values yield smoother output but can slow response. (Range: 0.001-0.1, default: 0.01)",
+        "qHighLabel": "Q_high:",
+        "qHighTooltip": "Process noise for large movements. Higher values allow the filter to adapt faster to changes. (Range: 1-100, default: 10)",
+        "thresholdGazeLabel": "Threshold Gaze:",
+        "thresholdGazeTooltip": "The cutoff for distinguishing small noise from significant eye movement. (Range: 1-4, default: 2)",
+        "thresholdOpennessLabel": "Threshold Openness:",
+        "thresholdOpennessTooltip": "The cutoff for distinguishing small noise from significant openness changes. (Range: 0.01-0.1)",
+        "blinkReleaseDelayLabel": "Blink Release Delay:",
+        "blinkReleaseDelayTooltip": "After a closed eye is detected, maintain the closed state for the specified number of milliseconds to account for tracking delay before reopening."
+    },
+    "LeftEyeStatusCard": {
+        "label": "Image Data - Left Eye",
+        "stateLabels": {
+          "good": "Online",
+          "bad": "Offline",
+          "forced": "Forced Offline"
+        }
+    },
+    "ModelSelectionCard": {
+        "header": "Model Selection",
+        "selectButton": "Select Model Folder",
+        "errorSelectingModel": "Error selecting model folder:"
+    },
+    "OpennessConfigurationCard": {
+        "header": "Openness Configuration",
+        "fullyClosedLabel": "Fully Closed (0.00 - {{max}})",
+        "neutralLabel": "Neutral ({{min}} - {{max}})",
+        "wideLabel": "Wide ({{min}} - 1.00)"
+    },
+    "RightEyeStatusCard": {
+        "label": "Image Data - Right Eye",
+        "stateLabels": {
+          "good": "Online",
+          "bad": "Offline",
+          "forced": "Forced Offline"
+        }
+    },
+    "SettingsDialog": {
+        "settings": "Settings"
+    },
+    "StartTrackingCard": {
+        "header": "Start Tracking",
+        "oscLabel": "OSC IP : Port",
+        "oscLeftPlaceholder": "Enter IP:",
+        "oscRightPlaceholder": "Port",
+        "trackingRateLabel": "Tracking Rate: {{rate}} ms",
+        "trackingRateInfo": "(Minimum frame interval in ms)",
+        "vrcNative": "VRC Native",
+        "vrcftV1": "VRCFT (v1)",
+        "vrcftV2": "VRCFT (v2)",
+        "splitYOut": "Split Y Out",
+        "splitYOutTooltip": "Enabling this option sends the Y-axis output separately to /v2/EyeLeftY and /v2/EyeRightY. When disabled, the output is sent to /v2/EyeY.",
+        "syncUpdate": "Sync Update",
+        "syncUpdateTooltip": "Only updates tracking when both left and right eye frames have been refreshed since the last update.",
+        "indEyes": "Ind Eyes",
+        "indEyesTooltip": "When true, the model computes gaze for each eye separately. When false, both eyes are combined into one gaze direction.",
+        "indEyelids": "Ind Eyelids",
+        "indEyelidsTooltip": "When true, the model computes eyelid openness for each eye separately. When false, it combines both eyes into one value.",
+        "eyeTracking": "Eye Tracking",
+        "eyeTrackingTooltip": "If enabled, eye tracking data will be sent over OSC; if disabled, it will not be sent.",
+        "eyelidTracking": "Eyelid Tracking",
+        "eyelidTrackingTooltip": "If enabled, eyelid tracking data will be sent over OSC; if disabled, it will not be sent.",
+        "vrcftPrefix": "VRCFT Prefix",
+        "vrcftPrefixPlaceholder": "Enter vrcft prefix"
+    },
+    "StatusCard": {
+        "clickToRemoveForcedOffline": "Click to remove forced offline",
+        "clickToForceOffline": "Click to force connection offline"
+    },
+    "StatusPage": {
+        "leftEyeCamera": "Left Eye Camera",
+        "rightEyeCamera": "Right Eye Camera"
+    },
+    "Tabs": {
+        "settings": "⚙"
+    },
+    "ThetaFlagsCard": {
+        "header": "Theta Flags",
+        "recordLabel": "Record:",
+        "deleteRecentLabel": "Delete Recent:",
+        "opennessLabel": "Openness:",
+        "modeLabel": "Mode:"
+    },
+    "common": {
+        "true": "TRUE",
+        "false": "FALSE"
+    },
+    "ThetaStatusCard": {
+        "label": "VR Headset Tracking",
+        "stateLabels": {
+          "good": "Online",
+          "bad": "Offline",
+          "forced": "Forced Offline"
+        }
+    },
+    "TrackingConfigurationCard": {
+        "header": "Gaze Configuration",
+        "verticalExaggerationLabel": "Vertical Exaggeration: {{value}}",
+        "verticalExaggerationDescription": "(Scale vertical movement)",
+        "horizontalExaggerationLabel": "Horizontal Exaggeration: {{value}}",
+        "horizontalExaggerationDescription": "(Scale horizontal movement)",
+        "pitchOffsetLabel": "Pitch Offset Degrees: {{value}}°",
+        "pitchOffsetDescription": "(Adjust pitch offset)"
+    },
+    "TrackingDataCard": {
+        "header": "Gaze Data",
+        "gaugeLabel": "{{yaw}}°x / {{pitch}}°y"
+    },
+    "TrackingPage": {
+        "header": "Tracking Dashboard"
+    },
+    "App": {
+        "tabDocumentation": "Documentation",
+        "tabStatus": "Status",
+        "tabDatabase": "Database",
+        "tabTracking": "Tracking"
+    }
+  }
+  

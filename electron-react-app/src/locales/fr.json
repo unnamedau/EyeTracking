@@ -1,0 +1,209 @@
+{
+    "SettingsDialogWithContent": {
+      "settings": "Paramètres",
+      "configureSettings": "Configurez vos paramètres ici.",
+      "languageLabel": "Langue:",
+      "optionEnglish": "Anglais",
+      "optionJapanese": "Japonais",
+      "optionGerman": "Allemand",
+      "optionFrench": "Français",
+      "optionSpanish": "Espagnol",
+      "themeLabel": "Thème",
+      "optionDark": "Sombre",
+      "optionNinaboo": "Ninaboo"
+    },
+    "CameraStream": {
+      "alt": "Flux de caméra",
+      "offlinePlaceholder": "Le flux est hors ligne"
+    },
+    "CompositeInput": {
+      "leftPlaceholder": "Entrez la valeur de gauche",
+      "rightPlaceholder": "Entrez la valeur de droite"
+    },
+    "ConfigurationSection": {
+      "heading": "Configuration",
+      "headsetTrackingLabel": "Suivi du casque",
+      "leftEyeLabel": "Données d'image de l'œil gauche",
+      "rightEyeLabel": "Données d'image de l'œil droit",
+      "headsetPortLeftPlaceholder": "Entrez le port",
+      "headsetPortRightPlaceholder": "ex : 6080",
+      "ipPortLeftPlaceholder": "Entrez IP:Port",
+      "leftEyeExample": "ex : 192.168.1.100:6080",
+      "rightEyeExample": "ex : 192.168.1.101:6080",
+      "errorInvalidPort": "Numéro de port invalide. Doit être compris entre 1 et 65535.",
+      "errorInvalidFormat": "Format invalide. Utilisez IP:Port (ex. : 192.168.1.100:6080).",
+      "errorInvalidIP": "Adresse IP invalide.",
+      "errorPortRange": "Le port doit être compris entre 1 et 65535.",
+      "backgroundImageUrlLabel": "URL de l'image de fond",
+      "backgroundImageUrlPlaceholder": "URL"
+    },
+    "CustomDialog": {
+      "cancel": "Annuler",
+      "ok": "OK"
+    },
+    "DatabasePage": {
+      "databaseSelectionTitle": "Sélection de base de données",
+      "selectedDatabaseLabel": "Base de données sélectionnée:",
+      "none": "Aucune",
+      "createNewDatabase": "Créer une nouvelle base de données",
+      "selectDatabase": "Sélectionner une base de données",
+      "deleteDatabase": "Supprimer la base de données",
+      "invalidDatabaseNameAlert": "Nom de base de données invalide. Veuillez entrer un nom valide sans séparateurs de chemin.",
+      "noFolderSelectedAlert": "Aucun dossier sélectionné.",
+      "errorCreatingDatabaseAlert": "Erreur lors de la création de la base de données. Consultez la console pour plus de détails.",
+      "confirmDeleteDatabase": "Êtes-vous sûr de vouloir supprimer la base de données sélectionnée ? Cette action est irréversible.",
+      "trainingDataRecordingTitle": "Enregistrement des données d'entraînement",
+      "recordTrainingData": "Enregistrer les données d'entraînement",
+      "recordingRateTitle": "Fréquence d'enregistrement",
+      "recordingRateTooltip": "Enregistre une image des données d'entraînement toutes les X ms",
+      "recordingRateSubtitle": "(Intervalle entre images en ms)",
+      "databaseEntryCountTitle": "Nombre d'entrées dans la base de données",
+      "numberOfEntriesLabel": "Nombre d'entrées:",
+      "newDatabaseDialogMessage": "Entrez le nom de la nouvelle base de données:",
+      "newDatabaseDialogPlaceholder": "Nom de la nouvelle base de données"
+    },
+    "EyeTrackingStatusCard": {
+      "label": "Suivi oculaire",
+      "stateLabels": {
+        "good": "Prêt",
+        "bad": "Hors ligne",
+        "forced": "Forcé hors ligne"
+      }
+    },
+    "HeadsetTrackingCard": {
+      "heading": "Suivi du casque",
+      "title": "Le pitch et le yaw sont relatifs à la cible visuelle",
+      "noData": "Aucune donnée",
+      "pitchLabel": "Pitch:",
+      "yawLabel": "Yaw:"
+    },
+    "KalmanFilterConfigCard": {
+      "header": "Configuration adaptative du filtre de Kalman",
+      "smoothEyesLabel": "Yeux fluides:",
+      "smoothEyesTooltip": "Activez Yeux fluides : lorsque cette option est activée, le filtre de Kalman lisse les petits bruits des mouvements oculaires.",
+      "smoothOpennessLabel": "Ouverture fluide:",
+      "smoothOpennessTooltip": "Activez Ouverture fluide : lorsque cette option est activée, le filtre de Kalman lisse les petits bruits dans les données d'ouverture des yeux.",
+      "opennessBasedTrustLabel": "Confiance basée sur l'ouverture:",
+      "opennessBasedTrustTooltip": "Ajuste la confiance accordée aux mesures du regard en fonction de l'ouverture des yeux. Une ouverture moindre réduit la confiance, aidant à minimiser un suivi erratique lorsque les yeux sont partiellement fermés.",
+      "measurementNoiseLabel": "Bruit de mesure (R):",
+      "measurementNoiseTooltip": "Variance attendue des mesures. Des valeurs plus élevées réduisent la confiance dans chaque mesure. (Plage : 2-8, défaut : 4)",
+      "qLowLabel": "Q_low:",
+      "qLowTooltip": "Bruit de processus pour les petits mouvements. Des valeurs plus faibles donnent un résultat plus fluide mais peuvent ralentir la réponse. (Plage : 0.001-0.1, défaut : 0.01)",
+      "qHighLabel": "Q_high:",
+      "qHighTooltip": "Bruit de processus pour les grands mouvements. Des valeurs plus élevées permettent au filtre de s'adapter plus rapidement aux changements. (Plage : 1-100, défaut : 10)",
+      "thresholdGazeLabel": "Seuil de regard:",
+      "thresholdGazeTooltip": "La limite pour distinguer les petits bruits des mouvements oculaires significatifs. (Plage : 1-4, défaut : 2)",
+      "thresholdOpennessLabel": "Seuil d'ouverture:",
+      "thresholdOpennessTooltip": "La limite pour distinguer les petits bruits des changements significatifs d'ouverture. (Plage : 0.01-0.1)",
+      "blinkReleaseDelayLabel": "Délai de relâchement du clignement:",
+      "blinkReleaseDelayTooltip": "Après détection d'un œil fermé, maintenez cet état pendant le nombre spécifié de millisecondes pour compenser le délai du suivi avant de rouvrir."
+    },
+    "LeftEyeStatusCard": {
+      "label": "Données d'image - œil gauche",
+      "stateLabels": {
+        "good": "En ligne",
+        "bad": "Hors ligne",
+        "forced": "Forcé hors ligne"
+      }
+    },
+    "ModelSelectionCard": {
+      "header": "Sélection de modèle",
+      "selectButton": "Sélectionner le dossier du modèle",
+      "errorSelectingModel": "Erreur lors de la sélection du dossier du modèle:"
+    },
+    "OpennessConfigurationCard": {
+      "header": "Configuration de l'ouverture",
+      "fullyClosedLabel": "Complètement fermé (0.00 - {{max}})",
+      "neutralLabel": "Neutre ({{min}} - {{max}})",
+      "wideLabel": "Large ({{min}} - 1.00)"
+    },
+    "RightEyeStatusCard": {
+      "label": "Données d'image - œil droit",
+      "stateLabels": {
+        "good": "En ligne",
+        "bad": "Hors ligne",
+        "forced": "Forcé hors ligne"
+      }
+    },
+    "SettingsDialog": {
+      "settings": "Paramètres"
+    },
+    "StartTrackingCard": {
+      "header": "Démarrer le suivi",
+      "oscLabel": "OSC IP : Port",
+      "oscLeftPlaceholder": "Entrez l'IP:",
+      "oscRightPlaceholder": "Port",
+      "trackingRateLabel": "Vitesse de suivi : {{rate}} ms",
+      "trackingRateInfo": "(Intervalle minimal entre images en ms)",
+      "vrcNative": "VRC Native",
+      "vrcftV1": "VRCFT (v1)",
+      "vrcftV2": "VRCFT (v2)",
+      "splitYOut": "Sortie Y séparée",
+      "splitYOutTooltip": "Si activée, la sortie de l'axe Y sera envoyée séparément à /v2/EyeLeftY et /v2/EyeRightY. Sinon, elle sera envoyée à /v2/EyeY.",
+      "syncUpdate": "Mise à jour synchronisée",
+      "syncUpdateTooltip": "Le suivi est mis à jour uniquement lorsque les images des deux yeux ont été rafraîchies depuis la dernière mise à jour.",
+      "indEyes": "Yeux individuels",
+      "indEyesTooltip": "Si activé, le modèle calcule la direction du regard pour chaque œil séparément. Sinon, les deux yeux sont combinés en une seule direction.",
+      "indEyelids": "Paupières individuelles",
+      "indEyelidsTooltip": "Si activé, le modèle calcule l'ouverture des paupières pour chaque œil séparément. Sinon, les valeurs des deux yeux sont combinées.",
+      "eyeTracking": "Suivi oculaire",
+      "eyeTrackingTooltip": "Si activé, les données de suivi oculaire seront envoyées via OSC ; sinon, elles ne le seront pas.",
+      "eyelidTracking": "Suivi des paupières",
+      "eyelidTrackingTooltip": "Si activé, les données de suivi des paupières seront envoyées via OSC ; sinon, elles ne le seront pas.",
+      "vrcftPrefix": "Préfixe VRCFT",
+      "vrcftPrefixPlaceholder": "Entrez le préfixe VRCFT"
+    },
+    "StatusCard": {
+      "clickToRemoveForcedOffline": "Cliquez pour retirer l'état hors ligne forcé",
+      "clickToForceOffline": "Cliquez pour forcer la déconnexion"
+    },
+    "StatusPage": {
+      "leftEyeCamera": "Caméra de l'œil gauche",
+      "rightEyeCamera": "Caméra de l'œil droit"
+    },
+    "Tabs": {
+      "settings": "⚙"
+    },
+    "ThetaFlagsCard": {
+      "header": "Drapeaux Theta",
+      "recordLabel": "Enregistrer :",
+      "deleteRecentLabel": "Supprimer le récent :",
+      "opennessLabel": "Ouverture :",
+      "modeLabel": "Mode :"
+    },
+    "common": {
+      "true": "TRUE",
+      "false": "FALSE"
+    },
+    "ThetaStatusCard": {
+      "label": "Suivi du casque VR",
+      "stateLabels": {
+        "good": "En ligne",
+        "bad": "Hors ligne",
+        "forced": "Forcé hors ligne"
+      }
+    },
+    "TrackingConfigurationCard": {
+      "header": "Configuration du regard",
+      "verticalExaggerationLabel": "Exagération verticale : {{value}}",
+      "verticalExaggerationDescription": "(Échelle du mouvement vertical)",
+      "horizontalExaggerationLabel": "Exagération horizontale : {{value}}",
+      "horizontalExaggerationDescription": "(Échelle du mouvement horizontal)",
+      "pitchOffsetLabel": "Décalage de pitch (degrés) : {{value}}°",
+      "pitchOffsetDescription": "(Ajuster le décalage de pitch)"
+    },
+    "TrackingDataCard": {
+      "header": "Données du regard",
+      "gaugeLabel": "{{yaw}}°x / {{pitch}}°y"
+    },
+    "TrackingPage": {
+      "header": "Tableau de bord de suivi"
+    },
+    "App": {
+      "tabDocumentation": "Documentation",
+      "tabStatus": "État",
+      "tabDatabase": "Base de données",
+      "tabTracking": "Suivi"
+    }
+  }
+  
