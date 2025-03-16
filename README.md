@@ -72,7 +72,7 @@ Discord Server: https://discord.gg/QTyU4eNKrv
    - ```> conda create -p ./tfgpu python=3.10``` *First time setup only*
    - ```> conda activate ./tfgpu```
    - ```> conda install -c conda-forge cudatoolkit=11.2 cudnn=8.1.0```  *First time setup only*
-   - ```> cd model/training/dir```
+   - ```> cd <path-to-extracted-files>/trainer```
    - ```> pip install --upgrade pip``` (It may complain and suggest a different command—just copy that command and run it instead.)  *First time setup only*
    - ```> pip install -r requirements.txt```  *First time setup only*
    - ```> python ./create_gaze_heatmap.py``` *(Optional but can help you see if your training data is good.)*
@@ -88,7 +88,7 @@ Discord Server: https://discord.gg/QTyU4eNKrv
    - ```> conda create -p ./tfjs python=3.10```
    - ```> conda activate ./tfjs```
    - ```> conda install -c conda-forge cudatoolkit=11.2 cudnn=8.1.0```  *First time setup only*
-   - ```> cd model/training/dir```
+   - ```> cd <path-to-extracted-files>/converter```
    - ```> pip install --upgrade pip``` (It may complain; copy the suggested command and run it.)  *First time setup only*
    - ```> pip install -r requirements.txt```  *First time setup only*
    - ```> python ./convert-to-tfjs.py```
