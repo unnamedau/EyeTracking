@@ -4,7 +4,7 @@ This project is the client application for a self-trained, machine learning-base
 
 # Showcase
 
-[![Showcase](https://img.youtube.com/vi/RxVewuoER38/0.jpg)](https://www.youtube.com/watch?v=RxVewuoER38)
+[![Showcase](https://img.youtube.com/vi/7OZ_mLgvca8/0.jpg)](https://www.youtube.com/watch?v=7OZ_mLgvca8)
 
 # Full Tutorial
 
