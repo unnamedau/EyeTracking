@@ -46,8 +46,8 @@ Discord Server: https://discord.gg/QTyU4eNKrv
 
 # To Run
 
-- Download and run the release .exe to install the eye-tracking client.
-- Download the VRTA application and the two python repos for training and converting models.
+- Download the release and run the .exe to install the eye-tracking client.
+- Follow the tutorial. 
 
 # Initial Setup
 
