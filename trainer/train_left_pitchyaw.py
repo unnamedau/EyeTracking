@@ -13,12 +13,7 @@ from sklearn.model_selection import train_test_split
 import tensorflow as tf
 from tensorflow.keras import Sequential
 from tensorflow.keras.layers import InputLayer, Conv2D, MaxPooling2D, Flatten, Dense, Dropout
-resolver = tf.distribute.cluster_resolver.TPUClusterResolver(tpu='local')
-tf.config.experimental_connect_to_cluster(resolver)
-# This is the TPU initialization code that has to be at the beginning.
-tf.tpu.experimental.initialize_tpu_system(resolver)
-print("All devices: ", tf.config.list_logical_devices('TPU'))
-strategy = tf.distribute.TPUStrategy(resolver)
+
 MAX_OFFSET = 10              # Maximum pixel offset for on-the-fly augmentation.
 
 def data_url_to_image(data_url: str):
@@ -95,6 +90,12 @@ def main():
     parser.add_argument("--db_path", required=True, help="Path to the SQLite database file")
     parser.add_argument("--output_dir", required=True, help="Folder to save the trained model")
     args = parser.parse_args()
+    resolver = tf.distribute.cluster_resolver.TPUClusterResolver(tpu='local')
+    tf.config.experimental_connect_to_cluster(resolver)
+    # This is the TPU initialization code that has to be at the beginning.
+    tf.tpu.experimental.initialize_tpu_system(resolver)
+    print("All devices: ", tf.config.list_logical_devices('TPU'))
+    strategy = tf.distribute.TPUStrategy(resolver)
     print("Loading data from:", args.db_path)
     images, labels = load_data_from_db(args.db_path)
     print("Images shape:", images.shape, "Labels shape:", labels.shape)
